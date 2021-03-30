@@ -1,4 +1,4 @@
 from send_money import send
 
 def select():
-    return send()
+    print(f"工资金额为：{send()}")

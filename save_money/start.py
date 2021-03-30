@@ -7,6 +7,10 @@
 4、定义一个start.py ，启动文件展示最终存款金额
 """
 import money
+from send_money import send
 from select_money import select
 if __name__ == '__main__':
-    print(f"最终存款金额为：{money.save_money + select()}")
+    # send()
+    select()
+    final_money = money.save_money + send()
+    print(f"最终存款金额为：{final_money}")
